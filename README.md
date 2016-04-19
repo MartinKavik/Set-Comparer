@@ -84,12 +84,14 @@ comp.GetInvalidInputsReport(Console.Out);
 ***Notes*** 
 - Examples are available in project *ConsoleApp*, *Program.cs*
 - Complexity of default algorithm for duplicates detection is **O(N)**
+
 ---
 ## Extensions
 It is possible to extend the library by adding support for other data-types.
 
 **How to create extension** (data type *string*):
-1. Create class derived from *SetBase<string>*
+
+**1)** Create class derived from *SetBase<string>*
 
 *Sets/**StringSet**.cs*
 ```c#
@@ -115,8 +117,9 @@ namespace SetComparer.Sets
     }
 }
 ```
-2. Override *IsDuplicate* and *ToString* methods if necessary
-3. Create class derived from *SetComparer<StringSet, string>*
+**2)** Override *IsDuplicate* and *ToString* methods if necessary
+
+**3)** Create class derived from *SetComparer<StringSet, string>*
 
 *Comparers/**StringSetComparer**.cs*
 ```c#
@@ -127,7 +130,7 @@ namespace SetComparer.Comparers
     public class StringSetComparer : SetComparer<StringSet, string> { }
 }
 ```
-4. Add comments and unit tests
+**4)** Add comments and unit tests
 
 ## 3rd-party libraries
 - [**DeepCloner**](https://www.nuget.org/packages/DeepCloner/) in project *SetComparerTesting*
