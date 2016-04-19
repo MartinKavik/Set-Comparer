@@ -143,5 +143,5 @@ namespace SetComparer.Comparers
 
 ## Testing
 - Project: **SetComparerTesting**
-- Unit tests cover class ***IntSetComparer*** (resp. its ancestor ***SetComparer**<IntSet, int>*)
+- Unit tests cover class ***IntSetComparer*** (resp. its ancestor ***SetComparer****\<IntSet, int\>*)
 - Files used in tests: ***/TestFiles/*** (*Note*: **input.txt** is encoded in *Windows-1252 (ANSI)*)
